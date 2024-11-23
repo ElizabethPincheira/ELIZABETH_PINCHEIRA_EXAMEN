@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="/static/ejercicio1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Inicio sesión</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="nombreuno">Ingresa tu nombre</label><br>
+                <input type="text" name="nombreuno" required><br>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Ingresa tu contraseña</label><br>
+                <input type="text" name="contraseña" required><br>
+            </div>
+            <div class="form-group">
+            <input type="submit" value="Verificar">
+            </div>
+        </form>
+
+{% if mayor is not none %}
+        <h2>El nombre más largo es: {{ nombre_mayor }} con {{ mayor }} caracteres</h2>
+{% endif %}
+    </div>
+</body>
+</html>

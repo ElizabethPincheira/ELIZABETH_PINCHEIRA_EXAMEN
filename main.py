@@ -18,6 +18,13 @@ def ejercicio1():
     return render_template('ejercicio1.html')
 
 
+#ejercicio2.html----------------------------------
+@app.route('/ejercicio2')
+def ejercicio2():
+    return render_template('ejercicio2.html')
+
+
+
 if __name__ == '__main__':
     app.run()
 
