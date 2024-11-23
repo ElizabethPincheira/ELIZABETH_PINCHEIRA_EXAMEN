@@ -11,7 +11,6 @@ def home():
     return render_template('index.html')
 
 
-
 #ejercicio1.html----------------------------------
 @app.route('/ejercicio1')
 def ejercicio1():
