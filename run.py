@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,session
 
 
 app = Flask(__name__)
@@ -10,7 +10,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('index.html')
-
 
 #ejercicio1.html----------------------------------
 @app.route('/ejercicio1', methods=['GET', 'POST'])
@@ -58,20 +57,50 @@ def ejercicio1():
                            nombre=nombre,
                            total_sin_descuento=total_sin_descuento,
                            descuento=int(descuento),
-                           total_pagar=int(total_pagar)
+                           total_pagar=int(total_pagar))
 
 
 #ejercicio2.html----------------------------------
 
 
 
-@app.route('/ejercicio2')
+@app.route('/ejercicio2', methods=['GET', 'POST'])
 def ejercicio2():
+    usuarios = [
+        {
+            'nombre': 'juan',
+            'pass': 'admin',
+            'rol': 'administrador'
+        },
+        {
+            'nombre': 'pepe',
+            'pass': 'user',
+            'rol': 'usuario'
+        }
+    ]
+
+    mensaje = ""
+
+
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        contrasena = request.form['contrasena']
+
+        usuario = next((u for u in usuarios if u['nombre'] == nombre and u['pass'] == contrasena), None)
+        if usuario:
+            mensaje = f"Bienvenido {usuario['rol']} {usuario['nombre']}."
+        else:
+            mensaje = "Usuario o contraseña incorrectos."
+
+
+        print(mensaje)
 
 
 
 
-    return render_template('ejercicio2.html')
+
+
+    return render_template('ejercicio2.html', mensaje=mensaje)
 
 
 
