@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83c9e2db-563c-4245-95d9-3114da41f925" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732300505484</updated>
       <workItem from="1732300508855" duration="12178000" />
-      <workItem from="1732388193905" duration="15833000" />
+      <workItem from="1732388193905" duration="16195000" />
     </task>
     <servers />
   </component>
@@ -100,6 +100,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ELIZABETH_PINCHEIRA_EXAMEN$main.coverage" NAME="run Coverage Results" MODIFIED="1732544206671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ELIZABETH_PINCHEIRA_EXAMEN$main.coverage" NAME="run Coverage Results" MODIFIED="1732544276670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
